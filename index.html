@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Make Your Own Physical Product — A Practical Guide</title>
+<meta name="description" content="A generic, practical guide to making a physical product: costs, factories, samples, production, negotiation, and cash-flow protection.">
+<style>
+:root{
+  --ink:#1a1d21; --muted:#5a6270; --line:#e2e5ea; --bg:#ffffff; --soft:#f6f7f9;
+  --accent:#0f5c46; --accent-soft:#e8f3ee; --warn:#8a5a00; --warn-bg:#fff6e0;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px;overflow-x:hidden}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px 64px}
+header.hero{background:var(--soft);border-bottom:1px solid var(--line);padding:48px 20px 36px}
+.hero-inner{max-width:920px;margin:0 auto}
+h1{font-size:2rem;line-height:1.2;margin:0 0 12px}
+h2{font-size:1.45rem;line-height:1.3;margin:40px 0 12px;padding-top:8px}
+h3{font-size:1.1rem;margin:24px 0 8px}
+p{margin:0 0 14px}
+.lede{font-size:1.12rem;color:var(--muted);max-width:44em}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+nav.toc a{color:var(--accent);text-decoration:none;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+nav.toc a:hover{background:var(--accent-soft)}
+ul,ol{margin:0 0 16px;padding-left:22px}
+li{margin-bottom:8px;overflow-wrap:break-word}
+strong{font-weight:650}
+.callout{background:var(--accent-soft);border:1px solid #cfe3d9;border-radius:var(--radius);padding:16px 18px;margin:18px 0}
+.callout p:last-child{margin-bottom:0}
+.warn{background:var(--warn-bg);border:1px solid #ecd9a0;border-radius:var(--radius);padding:16px 18px;margin:18px 0}
+table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:.96rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top;min-width:110px}
+th{background:var(--soft)}
+label{display:block;font-weight:600;margin:14px 0 6px;font-size:.95rem}
+input[type="text"],input[type="password"],input[type="number"],textarea{width:100%;padding:11px 12px;border:1px solid #c6ccd4;border-radius:8px;font:inherit;font-size:1rem;background:#fff;color:var(--ink)}
+textarea{min-height:84px;resize:vertical}
+button{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:12px 20px;font:inherit;font-weight:600;cursor:pointer;margin-top:16px}
+button:disabled{opacity:.55;cursor:wait}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+@media (max-width:640px){.grid{grid-template-columns:1fr}h1{font-size:1.65rem}body{font-size:16px}}
+.result{background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin-top:18px}
+.result p{margin-bottom:8px}
+.verdict{font-weight:700}
+.ok{color:var(--accent)} .bad{color:#a11a1a}
+.term{border:1px solid var(--line);border-radius:var(--radius);padding:13px 16px;margin-bottom:10px;background:#fff}
+.term h3{margin:0 0 4px;font-size:1.02rem}
+.term p{margin:0;color:var(--muted);font-size:.97rem}
+.panel{border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:var(--soft)}
+.note{font-size:.9rem;color:var(--muted)}
+.status{margin-top:14px;font-size:.95rem}
+.error{background:#fdecec;border:1px solid #f0b9b9;color:#7a1414;border-radius:8px;padding:12px 14px;margin-top:14px}
+.answer{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin-top:18px;overflow-wrap:break-word}
+.answer h3,.answer h4{margin:16px 0 6px}
+.answer ul,.answer ol{margin-bottom:12px}
+.sources{margin-top:14px;font-size:.93rem}
+.sources li{margin-bottom:4px}
+a{color:var(--accent);overflow-wrap:break-word}
+footer{border-top:1px solid var(--line);margin-top:48px;padding-top:20px;color:var(--muted);font-size:.92rem}
+.small{font-size:.92rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <h1>How to Make Your Own Physical Product</h1>
+    <p class="lede">A practical, end-to-end guide to turning an idea into a manufactured product: the real costs, how to find and vet factories, how samples become mass production, how to negotiate without damaging the product, and how to protect cash flow and the product itself.</p>
+    <nav class="toc" aria-label="Contents">
+      <a href="#part1">1. Key terms and costs</a>
+      <a href="#part2">2. Find a factory</a>
+      <a href="#part3">3. Samples to production</a>
+      <a href="#part4">4. Negotiation</a>
+      <a href="#part5">5. Cash flow and protection</a>
+      <a href="#playbook">Playbook</a>
+      <a href="#calculator">Calculator</a>
+      <a href="#glossary">Glossary</a>
+      <a href="#research">Research agent</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+
+<section>
+  <h2>Why a physical product is different</h2>
+  <p>Software is now cheap to clone, so software alone is rarely a moat. A physical product cannot be cloned in a weekend: a copier needs the molds, specifications, components, and supplier relationships, and those take months and capital to build.</p>
+  <p>A device plus an app — firmware updates, a subscription, useful data — is harder to copy than either alone. Software builders hold an edge here, because hardware companies are usually weak at software.</p>
+  <div class="callout"><p><strong>North star:</strong> cash flow, not unit price, is the key measure of a good production lead. Every decision in this guide should be checked against it.</p></div>
+</section>
+
+<section id="part1">
+  <h2>Part 1 — Key terms and landed cost</h2>
+  <ul>
+    <li><strong>MOQ (minimum order quantity):</strong> hundreds of units for an existing product with your logo (OEM / white label); thousands for a fully custom product. MOQ is not a law — it is the volume where the factory stops losing money.</li>
+    <li><strong>Unit price:</strong> tiered by volume, but the spread between small and large batches is only about 10% at best. Do not anchor on the 5,000-unit price when you can afford 500.</li>
+    <li><strong>Tooling / NRE:</strong> a simple steel mold costs roughly $3,000–$6,000; a complex one starts in the tens of thousands. A product may need several molds. Tooling is paid upfront, before a single real unit exists.</li>
+    <li><strong>Certification:</strong> electronics need FCC (US) or CE (Europe) approval to sell legally. A useful shortcut: build on an already-certified radio module and you may not need to redo full certification. Understand compliance before a production run, because it gates the timeline.</li>
+    <li><strong>Samples:</strong> usually tens to a couple of hundred dollars plus shipping. Some factories credit sample costs back on an order; most do not.</li>
+    <li><strong>AQL (acceptable quality limit):</strong> define before production what is acceptable, barely acceptable, and unacceptable. Both sides agree to the same standard, it goes in the contract, and it becomes the inspection reference.</li>
+    <li><strong>EXW / FOB / DDP:</strong> EXW is the price at the factory door — freight, customs, and duty are all on you. FOB means the factory gets the goods onto the ship. DDP means delivered to your door with duties paid. Always ask which basis a quote uses; the same product looks very different under each.</li>
+    <li><strong>Payment terms:</strong> the standard structure is 30% deposit and 70% before shipping. Never pay 100% upfront on a first order. A stronger structure is 30% deposit, 40% after an independent third-party inspection passes, and 30% when the goods are loaded or arrive at port. On a multi-million-dollar order, a 10% shift in terms can free about $100,000 of cash flow.</li>
+    <li><strong>Tariffs:</strong> many China-made products now pay an older 7.5% or 25% duty plus a newer 12.5% — roughly 20–37.5% on top of the base duty. The small-package de minimis loophole is gone. Look up the HTS code for the product before trusting any math. Routing goods through Vietnam or Thailand to dodge duty is transshipment and is illegal; a factory genuinely based there is a different story.</li>
+  </ul>
+  <h3>The landed-cost example</h3>
+  <p>A factory quotes $8 EXW. The real math runs like this:</p>
+  <table>
+    <tr><th>Step</th><th>Per unit</th><th>Running total</th></tr>
+    <tr><td>Factory price (EXW)</td><td>$8.00</td><td>$8.00</td></tr>
+    <tr><td>Onto the ship (FOB value)</td><td>+$0.40</td><td>$8.40</td></tr>
+    <tr><td>Ocean freight</td><td>+$0.60</td><td>$9.00</td></tr>
+    <tr><td>Duty at 37.5% of the on-ship value</td><td>+$3.15</td><td>$12.15</td></tr>
+    <tr><td>Customs broker and inspection, spread across the order</td><td>+$0.35</td><td><strong>about $12.50 landed</strong></td></tr>
+  </table>
+  <p><strong>EXW is not your cost of goods.</strong> Landed cost is.</p>
+  <div class="callout"><p><strong>Pricing rule:</strong> retail price must be 3–5× landed cost to cover ads, returns, and retail margins. The $8 product in this example must sell for roughly $48–60. Do this math in a spreadsheet before committing to a product. Try it live in the <a href="#calculator">calculator below</a>.</p></div>
+</section>
+
+<section id="part2">
+  <h2>Part 2 — Find and vet a good factory</h2>
+  <h3>Three routes</h3>
+  <ol>
+    <li><strong>Alibaba, direct.</strong> Many listings are trading companies (middlemen), not factories. Warning signs: a very wide product range, an office-tower address, and a refusal to walk you around the factory floor on a live call. Trading companies are not always bad — they may accept a small first order that a real factory would refuse.</li>
+    <li><strong>Sourcing agents.</strong> On-the-ground partners in China who visit factories and run due diligence for you. They are valuable when you do not speak Chinese.</li>
+    <li><strong>Trade shows.</strong> The Canton Fair in Guangzhou, held every spring and fall, puts about a thousand factories in one hall. It is one of the most efficient sourcing routes available.</li>
+  </ol>
+  <h3>Vetting checklist</h3>
+  <ul>
+    <li>Ask for past case studies, typical order volumes, and annual revenue. Ask to see financial records — factories often share them.</li>
+    <li>Visit in person. Walk the floor and talk to workers directly.</li>
+    <li>Talk to about 10 factories at once. That builds a price benchmark, and factories know it.</li>
+    <li>Check court records on Qichacha, the Chinese company-records platform. Ask whether the factory has been in legal disputes and why. Most of this information exists only on the Chinese web.</li>
+    <li>Look for a factory that has produced for years or decades, holds a real case-study portfolio, has minimal court records, and offers a fair price against the 10-factory benchmark.</li>
+  </ul>
+  <p>Factories mostly assemble, and margins are thin (about 10–20%; see Part 4). The buyer holds the bargaining power — use it tastefully.</p>
+</section>
+
+<section id="part3">
+  <h2>Part 3 — From samples to mass production</h2>
+  <ul>
+    <li><strong>Start with the design file.</strong> Begin with a CAD or design file and have the factory run a DFM (design for manufacturing) review: the factory flags what is expensive or impossible to make. Own the design files yourself — not the designer, and not the factory.</li>
+    <li><strong>Timeline.</strong> Samples take a few weeks to a few months depending on complexity. Molds add 4–6 weeks. The first mold shots are called T1 samples and are never right the first time — fix and repeat. Production runs 30–45 days after the deposit lands. Then comes inspection, then a few weeks on a ship plus customs. A few months from start to boxes is normal for something simple; longer for anything custom. Delays are normal — plan around them.</li>
+    <li><strong>Holiday traps.</strong> Chinese New Year shuts factories for weeks, and a January order is already late. Golden Week, the first week of October, is another slowdown before the fourth quarter.</li>
+    <li><strong>The golden sample.</strong> One approved unit, signed and kept by both sides. Every production unit is checked against it. Without one, good quality is an opinion with no reference.</li>
+    <li><strong>Third-party inspection.</strong> Hire an inspection agency such as TÜV or Bureau Veritas. A few hundred dollars per inspection buys a detailed report. Brief the inspector on the AQL so they inspect against your standard.</li>
+    <li><strong>Priority and buffers.</strong> Small orders get deprioritized behind bigger clients, and a late material delays everything downstream. Strict contractual timeline penalties are nearly impossible to get a factory to accept — plan buffers instead.</li>
+  </ul>
+</section>
+
+<section id="part4">
+  <h2>Part 4 — Negotiate with factories: seven rules</h2>
+  <p>Relationships (guanxi) matter, but the transaction of value decides. These seven rules protect both the deal and the product.</p>
+  <ol>
+    <li><strong>Negotiate the setup cost, not the MOQ.</strong> A first order roughly breaks even for the factory. Asking for 300 units instead of 1,000 marks a buyer as unserious. Solve the factory's problem instead: offer a setup fee, a slightly higher unit price for the smaller run, the standard color instead of a custom one, a mold the factory already owns, or one product instead of five.</li>
+    <li><strong>Sell the second order.</strong> Call the first order a trial. Show the launch plan and the reorder path. Factories rank customers and research buyers — professional profiles, social presence, press. A credible public track record is a strong signal; a near-empty presence is the opposite.</li>
+    <li><strong>Do not squeeze the unit price.</strong> Materials are most of the cost, and factory margins run about 10–20%. Push the price down 10% and the whole profit disappears: the factory may still say yes, and then the plastic gets cheaper, the screws shorter, and the battery smaller. The product quietly becomes worse. The legitimate version of this lever is sourcing materials yourself — finding a better packaging supplier in a lower-cost province and shipping the materials to the factory can save about 10% of total EXW cost.</li>
+    <li><strong>Talk to the boss, not the sales rep.</strong> Reps are typically 20–30 years old, paid a retainer plus roughly 1% of order volume, with no decision power. They are a communication tax between the buyer and the boss. Use WeChat, the channel factories actually run on, rather than relying on email alone.</li>
+    <li><strong>Give face.</strong> Never embarrass anyone in front of their team. Push back privately, one-to-one. Respect is operational, not decorative, in a long-term partnership.</li>
+    <li><strong>Be the customer factories want.</strong> Leverage comes from being easy to work with, not from threatening to walk away. Pay on time, send clear specifications, and never change the design after the mold is cut. When the production line is full, the easy customers' orders run first — and they get the better prices and payment terms.</li>
+    <li><strong>Protect yourself.</strong> Friendly is not naive. If you paid for the molds, the contract states that you own them and that the factory cannot run your product for anyone else. Before sending a design, sign an NNN agreement (non-use, non-disclosure, non-circumvention) written in Chinese and English and enforceable in China — a US NDA does very little there. Register the trademark in China even if you only manufacture there: China awards trademarks to whoever files first, and squatters watch for new brands. Filing in China within six months of a US filing keeps the US priority date. Ask where materials come from: US Customs can hold goods made with Xinjiang-linked inputs (cotton, aluminum, polysilicon) until the supply chain is proven clean. Collect all quotes, benchmark them, and negotiate tastefully rather than auctioning factories against each other.</li>
+  </ol>
+</section>
+
+<section id="part5">
+  <h2>Part 5 — Cash-flow and protection plays</h2>
+  <h3>Sinosure: pay later</h3>
+  <p>Sinosure is China's state-backed export credit insurer. The factory insures your invoice with Sinosure; if you do not pay, Sinosure covers most of the factory's loss, so the factory can safely let you pay later.</p>
+  <ul>
+    <li>Best case: net-120 terms after goods ship with zero down. That takes a strong brand and track record and will not happen on a first or second order.</li>
+    <li>The realistic early win is a smaller deposit plus 60–90 day terms. It changes everything, because product can sell before it has been paid for.</li>
+    <li>The factory applies, not the buyer. Sinosure will check the buyer, so expect to show a couple of years of financial statements.</li>
+    <li>The factory pays the insurance premium — ask whether it is built into the price.</li>
+    <li>Many factories have never heard of Sinosure. A factory that already runs Sinosure terms signals experience with international clients.</li>
+  </ul>
+  <h3>Schedule A: act against counterfeiters</h3>
+  <p>Anything good gets copied, and takedown notices are a slow, repetitive game. The stronger play is a US federal court action under a Schedule A case, which lists dozens of seller accounts on one schedule.</p>
+  <ul>
+    <li>A temporary restraining order goes to major marketplaces; platforms take the listings down and freeze the sellers' payouts.</li>
+    <li>Most defendants never appear, so cases settle or are won by default, and money is collected from the frozen payouts. Some law firms run these cases on contingency.</li>
+    <li>Registered IP must exist first — a US trademark at minimum, and a design patent if the look can be copied. File before launch.</li>
+    <li>Courts have tightened: some judges now want a bond per defendant, and some dismiss cases that lump unrelated sellers together. Use a firm that does this properly.</li>
+  </ul>
+  <h3>Add a China 3PL</h3>
+  <p>Most brands run one warehouse (3PL) in the US. Add a second one next to the factory in China: US orders ship from the US warehouse, and the rest of the world ships straight from China, so worldwide selling starts without stocking every country.</p>
+  <p>The China warehouse is also a backup — when the US warehouse runs dry, it covers US orders while the next shipment is on the water, so advertising never has to switch off. One caution: packages from China into the US now pay full tariffs, so treat the China 3PL as a backup and international lever, not the main US route.</p>
+</section>
+
+<section id="playbook">
+  <h2>The playbook: starting a hardware product from zero</h2>
+  <ol>
+    <li><strong>Do not start fully custom.</strong> Find a product a factory already makes and modify it — your logo, your packaging, your tweak. No molds, lower MOQ.</li>
+    <li><strong>Pre-sell first.</strong> A pre-order page or a crowdfunding campaign proves demand. A few thousand dollars of advertising validates the product before any commitment to inventory. The worst outcome is a warehouse of units that do not sell.</li>
+    <li><strong>Run the landed-cost math before committing.</strong> If the product cannot sell for 3–5× landed cost, change the product.</li>
+    <li><strong>Get samples from every factory worth considering.</strong> Samples are the benchmark for quality and for spotting overcharging.</li>
+    <li><strong>Travel to China and meet every boss in person.</strong> Trust runs both ways — the factory is also deciding whether the buyer is legitimate, and both sides put capital into the partnership.</li>
+    <li><strong>Trademark the product in the US and China.</strong></li>
+    <li><strong>Only after demand is validated:</strong> pay for custom molds, pursue Sinosure terms, and build the real moat.</li>
+    <li><strong>Assemble one working file:</strong> the factory checklist, the questions to ask each factory, and the landed-cost spreadsheet, kept together and updated on every order.</li>
+  </ol>
+</section>
+
+<section id="calculator">
+  <h2>Landed-cost calculator</h2>
+  <p>Pre-filled with the guide's worked example: an $8 EXW quote that lands at about $12.50. Change any number and the landed cost and the pricing verdict update live.</p>
+  <div class="grid">
+    <div>
+      <label for="calc-exw">Factory price, EXW ($ per unit)</label>
+      <input type="number" id="calc-exw" value="8" step="0.01" min="0">
+      <label for="calc-ship">Cost to get goods onto the ship ($ per unit)</label>
+      <input type="number" id="calc-ship" value="0.40" step="0.01" min="0">
+      <label for="calc-freight">Ocean freight ($ per unit)</label>
+      <input type="number" id="calc-freight" value="0.60" step="0.01" min="0">
+    </div>
+    <div>
+      <label for="calc-duty">Duty rate (% of the on-ship value)</label>
+      <input type="number" id="calc-duty" value="37.5" step="0.1" min="0">
+      <label for="calc-other">Broker, inspection and other costs ($ per unit)</label>
+      <input type="number" id="calc-other" value="0.35" step="0.01" min="0">
+      <label for="calc-retail">Planned retail price ($)</label>
+      <input type="number" id="calc-retail" value="54" step="0.01" min="0">
+    </div>
+  </div>
+  <div class="result" aria-live="polite">
+    <p>On-ship (FOB) value: <strong id="out-fob">$8.40</strong></p>
+    <p>Duty: <strong id="out-duty">$3.15</strong></p>
+    <p>Landed cost: <strong id="out-landed">$12.50</strong></p>
+    <p>Retail multiple: <strong id="out-multiple">4.3×</strong> landed cost</p>
+    <p>Healthy retail range (3–5× landed): <strong id="out-range">$37.50 – $62.50</strong></p>
+    <p class="verdict ok" id="out-verdict">Verdict: inside the 3–5× range. The price can cover ads, returns, and retail margins.</p>
+  </div>
+  <p class="small">Duty in this example is charged on the on-ship value. Rules differ by product and country — confirm the HTS code and the current rate before relying on any figure. The research agent below can look a rate up.</p>
+</section>
+
+<section id="glossary">
+  <h2>Glossary</h2>
+  <p>Search the key terms used in this guide.</p>
+  <label for="glossary-search">Search terms</label>
+  <input type="text" id="glossary-search" placeholder="Try: duty, mold, inspection, trademark…" autocomplete="off">
+  <p class="small" id="glossary-count" aria-live="polite"></p>
+  <div id="glossary-list">
+    <div class="term" data-search="moq minimum order quantity"><h3>MOQ</h3><p>Minimum order quantity. Hundreds of units for an existing product with your logo; thousands for a fully custom product. It marks the volume where the factory stops losing money.</p></div>
+    <div class="term" data-search="oem white label original equipment manufacturer"><h3>OEM</h3><p>An existing product made by a factory and sold with your logo and packaging — white label. The low-MOQ, no-mold starting point this guide recommends.</p></div>
+    <div class="term" data-search="nre tooling mold non-recurring engineering"><h3>NRE / Tooling</h3><p>The upfront cost of molds and setup. A simple steel mold runs roughly $3,000–$6,000; a complex one starts in the tens of thousands. Paid before any real unit exists.</p></div>
+    <div class="term" data-search="fcc certification radio electronics us"><h3>FCC</h3><p>US certification that electronics need in order to sell legally. Building on an already-certified radio module may avoid repeating full certification.</p></div>
+    <div class="term" data-search="ce certification europe electronics"><h3>CE</h3><p>The European counterpart to FCC approval. Electronics need CE marking to sell legally in Europe.</p></div>
+    <div class="term" data-search="aql acceptable quality limit inspection standard"><h3>AQL</h3><p>Acceptable quality limit. The agreed standard that defines acceptable, barely acceptable, and unacceptable quality before production starts. Inspections are judged against it.</p></div>
+    <div class="term" data-search="exw ex works factory door price"><h3>EXW</h3><p>Ex Works. The price at the factory door. Freight, customs, and duty are all the buyer's responsibility on top of this price.</p></div>
+    <div class="term" data-search="fob free on board ship price"><h3>FOB</h3><p>Free On Board. The factory's price includes getting the goods onto the ship. Freight and duty after that point sit with the buyer.</p></div>
+    <div class="term" data-search="ddp delivered duty paid door price"><h3>DDP</h3><p>Delivered Duty Paid. The price covers delivery to the buyer's door with duties already paid — the simplest basis to compare, when it is offered.</p></div>
+    <div class="term" data-search="hts code harmonized tariff schedule duty classification"><h3>HTS code</h3><p>The classification code in the Harmonized Tariff Schedule that sets a product's duty rate. Look it up before trusting any landed-cost math.</p></div>
+    <div class="term" data-search="transshipment routing goods third country illegal duty evasion"><h3>Transshipment</h3><p>Routing goods through a third country, such as Vietnam or Thailand, to disguise origin and dodge duty. It is illegal. A factory genuinely based in that country is a different case.</p></div>
+    <div class="term" data-search="dfm design for manufacturing review"><h3>DFM</h3><p>Design for manufacturing. A factory review of a CAD or design file that flags what is expensive or impossible to make, before tooling money is spent.</p></div>
+    <div class="term" data-search="t1 sample first mold shot trial"><h3>T1 sample</h3><p>The first units shot from a new mold. T1 samples are never right the first time; expect fix-and-repeat rounds.</p></div>
+    <div class="term" data-search="golden sample approved reference unit signed"><h3>Golden sample</h3><p>One approved unit, signed and kept by both buyer and factory. Every production unit is checked against this reference.</p></div>
+    <div class="term" data-search="guanxi relationships trust business china"><h3>Guanxi</h3><p>Relationships and trust in Chinese business culture. It matters, but the transaction of value still decides how a factory treats an order.</p></div>
+    <div class="term" data-search="nnn agreement non-use non-disclosure non-circumvention china nda"><h3>NNN agreement</h3><p>A non-use, non-disclosure, non-circumvention agreement written in Chinese and English and enforceable in China. Stronger protection there than a US NDA.</p></div>
+    <div class="term" data-search="sinosure export credit insurance pay later terms"><h3>Sinosure</h3><p>China's state-backed export credit insurer. A factory insures an invoice with Sinosure so it can safely offer the buyer later payment terms.</p></div>
+    <div class="term" data-search="schedule a case counterfeit lawsuit federal court marketplace freeze"><h3>Schedule A case</h3><p>A US federal court action that lists dozens of counterfeit seller accounts on one schedule, so marketplaces take listings down and freeze seller payouts.</p></div>
+    <div class="term" data-search="3pl third party logistics warehouse fulfilment"><h3>3PL</h3><p>Third-party logistics: an outside warehouse that stores and ships product. This guide recommends pairing a US 3PL with a second warehouse in China.</p></div>
+    <div class="term" data-search="landed cost total cost goods duty freight cogs"><h3>Landed cost</h3><p>The true per-unit cost once factory price, freight, duty, brokerage, and inspection are all included. Retail price should be 3–5× landed cost.</p></div>
+    <div class="term" data-search="canton fair trade show guangzhou sourcing"><h3>Canton Fair</h3><p>A major trade fair in Guangzhou, held every spring and fall, with about a thousand factories in one hall. One of the most efficient sourcing routes.</p></div>
+    <div class="term" data-search="qichacha company records court records due diligence china"><h3>Qichacha</h3><p>A Chinese company-records platform. Use it during factory vetting to check registration details and court records.</p></div>
+    <div class="term" data-search="wechat messaging app factories communication china"><h3>WeChat</h3><p>The messaging channel factories in China actually run on. Direct contact there reaches decision-makers faster than email alone.</p></div>
+  </div>
+  <p class="small" id="glossary-none" hidden>No term matches that search. Try a shorter word.</p>
+</section>
+
+<section id="research">
+  <h2>Research agent</h2>
+  <p>Ask for a deep, sourced brief on any area in this guide's world: the current tariff rate for a product's HTS code, the FCC path for a wireless product, how to vet a factory category, a negotiation plan for a first order, Sinosure terms, trademark filing steps in China, or landed-cost math for a specific product and volume.</p>
+  <div class="panel">
+    <label for="api-key">Google AI API key</label>
+    <input type="password" id="api-key" placeholder="Paste your key here" autocomplete="off">
+    <p class="note">Privacy, in plain terms: the key is stored only in this browser tab's session storage. It is sent only to generativelanguage.googleapis.com, as part of the research request. It is never sent to this site or to any other server, and it disappears when the tab closes.</p>
+    <label for="research-topic">Research topic</label>
+    <textarea id="research-topic" placeholder="Example: The current tariff rate for LED lamps, HTS 9405, imported from China into the US"></textarea>
+    <button id="research-btn" type="button">Run research</button>
+    <p class="status" id="research-status" aria-live="polite"></p>
+    <div class="error" id="research-error" hidden></div>
+    <div class="answer" id="research-answer" hidden></div>
+    <div class="sources" id="research-sources" hidden></div>
+  </div>
+  <p class="small">Each brief separates what this guide says from what fresh research finds, cites its sources, and ends with concrete next steps.</p>
+</section>
+
+<footer>
+  <p>This is a general educational guide to product manufacturing. Figures are typical ranges, not quotes. Confirm duty rates, certification duties, and legal steps for the specific product and market before spending money.</p>
+</footer>
+</main>
+
+<script>
+"use strict";
+/* ---------- Landed-cost calculator ---------- */
+(function () {
+  var ids = ["calc-exw", "calc-ship", "calc-freight", "calc-duty", "calc-other", "calc-retail"];
+  function num(id) {
+    var v = parseFloat(document.getElementById(id).value);
+    return isNaN(v) || v < 0 ? 0 : v;
+  }
+  function money(v) { return "$" + v.toFixed(2); }
+  function update() {
+    var exw = num("calc-exw");
+    var fob = exw + num("calc-ship");
+    var duty = fob * num("calc-duty") / 100;
+    var landed = fob + num("calc-freight") + duty + num("calc-other");
+    var retail = num("calc-retail");
+    var multiple = landed > 0 ? retail / landed : 0;
+    document.getElementById("out-fob").textContent = money(fob);
+    document.getElementById("out-duty").textContent = money(duty);
+    document.getElementById("out-landed").textContent = money(landed);
+    document.getElementById("out-multiple").textContent = multiple.toFixed(1) + "×";
+    document.getElementById("out-range").textContent = money(landed * 3) + " – " + money(landed * 5);
+    var verdict = document.getElementById("out-verdict");
+    if (landed <= 0) {
+      verdict.textContent = "Verdict: enter a factory price to run the math.";
+      verdict.className = "verdict";
+    } else if (multiple < 3) {
+      verdict.textContent = "Verdict: below 3× landed cost. At this price the product cannot cover ads, returns, and retail margins. Raise the price, cut the landed cost, or change the product.";
+      verdict.className = "verdict bad";
+    } else if (multiple <= 5) {
+      verdict.textContent = "Verdict: inside the 3–5× range. The price can cover ads, returns, and retail margins.";
+      verdict.className = "verdict ok";
+    } else {
+      verdict.textContent = "Verdict: above 5× landed cost. The margin is strong — check that the market will still pay this price.";
+      verdict.className = "verdict ok";
+    }
+  }
+  ids.forEach(function (id) {
+    document.getElementById(id).addEventListener("input", update);
+  });
+  update();
+})();
+
+/* ---------- Searchable glossary ---------- */
+(function () {
+  var input = document.getElementById("glossary-search");
+  var terms = Array.prototype.slice.call(document.querySelectorAll("#glossary-list .term"));
+  var count = document.getElementById("glossary-count");
+  var none = document.getElementById("glossary-none");
+  function apply() {
+    var q = input.value.trim().toLowerCase();
+    var shown = 0;
+    terms.forEach(function (t) {
+      var hay = (t.getAttribute("data-search") + " " + t.textContent).toLowerCase();
+      var hit = !q || hay.indexOf(q) !== -1;
+      t.style.display = hit ? "" : "none";
+      if (hit) shown++;
+    });
+    count.textContent = q ? shown + " of " + terms.length + " terms match." : terms.length + " terms.";
+    none.hidden = shown !== 0;
+  }
+  input.addEventListener("input", apply);
+  apply();
+})();
+
+/* ---------- Research agent ---------- */
+var GUIDE_CONTEXT = `
+HOW TO MAKE YOUR OWN PHYSICAL PRODUCT — A PRACTICAL GUIDE
+
+Core idea: Software is now cheap to clone, so software alone is rarely a moat. A physical product cannot be cloned in a weekend: a copier needs the molds, specifications, components, and supplier relationships, and those take months and capital. A device plus an app (firmware updates, subscription, data) is harder to copy than either alone. Cash flow, not unit price, is the key measure of a good production lead.
+
+PART 1 — KEY TERMS AND LANDED COST
+MOQ (minimum order quantity): hundreds of units for an existing product with your logo (OEM / white label); thousands for fully custom. MOQ is not a law — it is the volume where the factory stops losing money.
+Unit price: tiered by volume, but the spread between small and large batches is only about 10 percent at best. Do not anchor on the 5,000-unit price when you can afford 500.
+Tooling / NRE: a simple steel mold costs roughly 3,000–6,000 dollars; a complex one starts in the tens of thousands. A product may need several molds. Paid upfront, before a single real unit exists.
+Certification: electronics need FCC (US) or CE (Europe) to sell legally. Build on an already-certified radio module and you may not need to redo full certification. Compliance must be understood before a production run, because it gates the timeline.
+Samples: usually tens to a couple of hundred dollars plus shipping; some factories credit them back on an order, most do not.
+AQL (acceptable quality limit): define before production what is acceptable, barely acceptable, and unacceptable. Both sides agree to the same standard; it goes in the contract; it is the inspection reference.
+EXW / FOB / DDP: EXW is the price at the factory door — freight, customs, and duty are all on you. FOB means the factory gets the goods onto the ship. DDP means delivered to your door with duties paid. Always ask which basis a quote uses.
+Payment terms: standard is 30 percent deposit, 70 percent before shipping. Never pay 100 percent upfront on a first order. A stronger structure: 30 percent deposit, 40 percent after an independent third-party inspection passes, 30 percent when the goods are loaded or arrive at port. On a multi-million-dollar order, a 10 percent shift in terms can free about 100,000 dollars of cash flow.
+Tariffs: many China-made products now pay an older 7.5 percent or 25 percent duty plus a newer 12.5 percent — roughly 20–37.5 percent on top of the base duty. The small-package de minimis loophole is gone. Look up the product HTS code before trusting any math. Routing goods through Vietnam or Thailand to dodge duty is transshipment and is illegal; a factory genuinely based there is a different story.
+Landed-cost worked example: factory says 8 dollars EXW, which becomes 8.40 dollars on the ship, plus 0.60 dollars ocean freight per unit, plus 3.15 dollars duty at 37.5 percent, plus customs broker and inspection spread across the order, giving about 12.50 dollars landed. EXW is not your cost of goods.
+Pricing rule: retail price must be 3–5 times landed cost to cover ads, returns, and retail margins. The 8-dollar product must sell for roughly 48–60 dollars. Do this math in a spreadsheet before committing to a product.
+
+PART 2 — FIND AND VET A GOOD FACTORY
+Route 1, Alibaba direct: many listings are trading companies (middlemen), not factories. Warning signs: a very wide product range, an office-tower address, refusal to walk you around the factory floor on a live call. Trading companies are not always bad — they may take a small first order a real factory would refuse.
+Route 2, sourcing agents: on-the-ground partners in China who visit factories and run due diligence for you; valuable when you do not speak Chinese.
+Route 3, trade shows: the Canton Fair in Guangzhou, every spring and fall, puts about a thousand factories in one hall. One of the most efficient sourcing routes.
+Vetting checklist: ask for past case studies, typical order volumes, and annual revenue; ask to see financial records, and factories often share them. Visit in person, walk the floor, talk to workers directly. Talk to about 10 factories at once to build a price benchmark. Check court records on Qichacha (the Chinese company-records platform); ask whether they have been in legal disputes and why; most of this information exists only on the Chinese web. The target: a factory producing for years or decades, a real case-study portfolio, minimal court records, and a fair price against the 10-factory benchmark. Factories mostly assemble and margins are thin, so the buyer holds the bargaining power — use it tastefully.
+
+PART 3 — SAMPLES TO MASS PRODUCTION
+Start with a CAD or design file and have the factory run a DFM (design for manufacturing) review: they flag what is expensive or impossible to make. Own the design files yourself — not the designer, not the factory.
+Timeline: samples take a few weeks to a few months depending on complexity. Molds add 4–6 weeks. First mold shots are called T1 samples and are never right the first time — fix and repeat. Production runs 30–45 days after the deposit lands. Then inspection, then a few weeks on a ship plus customs. A few months from start to boxes is normal for something simple; longer for anything custom. Delays are normal — plan around them.
+Holiday traps: Chinese New Year shuts factories for weeks; a January order is already late. Golden Week, the first week of October, is another slowdown before the fourth quarter.
+The golden sample: one approved unit, signed, kept by both sides. Every production unit is checked against it. Without one, good quality is an opinion with no reference.
+Third-party inspection: hire an inspection agency such as TÜV or Bureau Veritas. A few hundred dollars per inspection buys a detailed report. Brief the inspector on your AQL so they inspect against your standard.
+Small orders get deprioritized behind bigger clients, and a late material delays everything downstream. Strict contractual timeline penalties are nearly impossible to get a factory to accept — plan buffers instead.
+
+PART 4 — NEGOTIATE WITH FACTORIES: SEVEN RULES
+Relationships (guanxi) matter, but the transaction of value decides.
+Rule 1: Negotiate the setup cost, not the MOQ. A first order roughly breaks even for the factory. Asking for 300 instead of 1,000 marks you as unserious. Solve their problem instead: offer a setup fee, a slightly higher unit price for the smaller run, their standard color instead of a custom one, a mold they already own, one product instead of five.
+Rule 2: Sell them the second order. Call the first order a trial. Show the launch plan and the reorder path. Factories rank customers and research you — professional profiles, social presence, press. A credible public track record is a strong signal.
+Rule 3: Do not squeeze the unit price. Materials are most of the cost and factory margins run about 10–20 percent. Beat them down 10 percent and you eat their whole profit: they still say yes, then the plastic gets cheaper, the screws shorter, the battery smaller, and the product quietly becomes worse. The legitimate version of this lever is sourcing materials yourself — finding a better packaging supplier in a lower-cost province and shipping the materials to the factory can save about 10 percent of total EXW cost.
+Rule 4: Talk to the boss, not the sales rep. Reps are typically 20–30 years old, on a retainer plus roughly 1 percent of order volume, with no decision power. They are a communication tax between you and the boss. Use WeChat, the channel factories actually run on.
+Rule 5: Give face. Never embarrass anyone in front of their team. Push back privately, one-to-one. Respect is operational, not decorative, in a long-term partnership.
+Rule 6: Be the customer they want. Your leverage is being easy to work with, not threatening to walk away. Pay on time, send clear specifications, never change the design after the mold is cut. When the production line is full, the easy customers orders run first — and they get the better prices and payment terms.
+Rule 7: Protect yourself. Friendly is not naive. If you paid for the molds, the contract says you own them and the factory cannot run your product for anyone else. Before sending a design, sign an NNN agreement (non-use, non-disclosure, non-circumvention) written in Chinese and English and enforceable in China — a US NDA does very little there. Register your trademark in China even if you only manufacture there: China awards trademarks to whoever files first, and squatters watch for new brands; filing in China within six months of a US filing keeps your US priority date. Ask where materials come from: US Customs can hold goods made with Xinjiang-linked inputs (cotton, aluminum, polysilicon) until you prove the supply chain is clean. Get all the quotes, benchmark them, and negotiate tastefully rather than auctioning factories against each other.
+
+PART 5 — CASH-FLOW AND PROTECTION PLAYS
+Sinosure (pay later): Sinosure is China state-backed export credit insurer. The factory insures your invoice with Sinosure; if you do not pay, Sinosure covers most of the factory loss, so the factory can safely let you pay later. Best case cited: net-120 terms after goods ship with zero down — that takes a strong brand and track record and will not happen on a first or second order. A smaller deposit plus 60–90 day terms is the realistic early win, and it changes everything because you can sell product before you have paid for it. The factory applies, not you; Sinosure will check you, so expect to show a couple of years of financial statements. The factory pays the insurance premium — ask whether it is built into your price. Many factories have never heard of Sinosure; a factory that already runs Sinosure terms is a signal of experience with international clients.
+Schedule A (act against counterfeiters): anything good gets copied, and takedown notices are a slow repetitive game. The stronger play: sue in US federal court under a Schedule A case, which lists dozens of seller accounts on one schedule. A temporary restraining order goes to major marketplaces; platforms take the listings down and freeze the sellers payouts. Most defendants never appear, so you settle or win by default and collect from the frozen money. Some law firms run these on contingency. Requirements and caveats: you need registered IP first (a US trademark at minimum; a design patent if the look can be copied) — file before you launch. Courts have tightened: some judges now want a bond per defendant, and some throw out cases that lump unrelated sellers together. Use a firm that does it properly.
+China 3PL: most brands run one warehouse (3PL) in the US. Add a second one next to the factory in China: US orders ship from the US warehouse, the rest of the world ships straight from China, so you can sell worldwide without stocking every country. It is also a backup — when the US warehouse runs dry, the China warehouse covers US orders while the next shipment is on the water, so ads never switch off. The math changed, though: packages from China into the US now pay full tariffs, so treat the China 3PL as a backup and international lever, not the main US route.
+
+THE PLAYBOOK — STARTING FROM ZERO
+1. Do not start fully custom. Find a product a factory already makes and modify it — your logo, your packaging, your tweak. No molds, lower MOQ.
+2. Pre-sell first. A pre-order page or a crowdfunding campaign proves demand; a few thousand dollars of ads validates before you commit to inventory. The worst outcome is a warehouse of units that do not sell.
+3. Run the landed-cost math before committing. If it cannot sell for 3–5 times landed cost, change the product.
+4. Get samples from every factory worth considering. Samples are your benchmark for quality and for spotting overcharging.
+5. Fly to China and meet every boss in person. Trust runs both ways — they are also deciding whether you are legit, and both sides put capital into the partnership.
+6. Trademark the product in the US and China.
+7. Only after demand is validated: pay for custom molds, chase Sinosure terms, and build the real moat.
+8. Keep one working file: the factory checklist, the questions to ask, and the landed-cost spreadsheet, updated on every order.
+
+GLOSSARY (short forms): MOQ minimum order quantity; OEM an existing product sold with your brand; NRE/tooling upfront mold and setup cost; FCC US electronics certification; CE European electronics certification; AQL acceptable quality limit, the agreed inspection standard; EXW price at the factory door; FOB price including loading onto the ship; DDP delivered price with duties paid; HTS code the tariff classification that sets the duty rate; transshipment illegal routing through a third country to dodge duty; DFM design for manufacturing review; T1 sample first shots from a new mold; golden sample the signed approved reference unit; guanxi relationships and trust; NNN agreement non-use, non-disclosure, non-circumvention, enforceable in China; Sinosure China export credit insurer enabling pay-later terms; Schedule A case a US federal action listing many counterfeit sellers at once; 3PL third-party logistics warehouse; landed cost the true per-unit cost including freight, duty, and fees; Canton Fair the Guangzhou trade fair held spring and fall; Qichacha the Chinese company-records platform; WeChat the messaging channel factories run on.
+`;
+
+(function () {
+  var keyInput = document.getElementById("api-key");
+  var topicInput = document.getElementById("research-topic");
+  var btn = document.getElementById("research-btn");
+  var status = document.getElementById("research-status");
+  var errorBox = document.getElementById("research-error");
+  var answerBox = document.getElementById("research-answer");
+  var sourcesBox = document.getElementById("research-sources");
+  var KEY_NAME = "guide-research-key";
+
+  try {
+    var saved = sessionStorage.getItem(KEY_NAME);
+    if (saved) keyInput.value = saved;
+    keyInput.addEventListener("input", function () {
+      sessionStorage.setItem(KEY_NAME, keyInput.value.trim());
+    });
+  } catch (e) { /* session storage unavailable: key simply will not persist */ }
+
+  function escapeHtml(s) {
+    return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+  function inline(s) {
+    return escapeHtml(s)
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+      .replace(/\*([^*]+)\*/g, "<em>$1</em>")
+      .replace(/\[([^\]]+)\]\((https?:[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+  }
+  function markdownLite(text) {
+    var lines = text.split(/\r?\n/);
+    var html = "";
+    var listType = null;
+    function closeList() { if (listType) { html += listType === "ul" ? "</ul>" : "</ol>"; listType = null; } }
+    lines.forEach(function (raw) {
+      var line = raw.trim();
+      if (!line) { closeList(); return; }
+      var h = line.match(/^(#{1,4})\s+(.*)$/);
+      if (h) { closeList(); var lvl = Math.min(h[1].length + 1, 4); html += "<h" + lvl + ">" + inline(h[2]) + "</h" + lvl + ">"; return; }
+      var bullet = line.match(/^[-*]\s+(.*)$/);
+      var numbered = line.match(/^\d+[.)]\s+(.*)$/);
+      if (bullet || numbered) {
+        var want = bullet ? "ul" : "ol";
+        if (listType !== want) { closeList(); html += "<" + want + ">"; listType = want; }
+        html += "<li>" + inline((bullet || numbered)[1]) + "</li>";
+        return;
+      }
+      closeList();
+      html += "<p>" + inline(line) + "</p>";
+    });
+    closeList();
+    return html;
+  }
+  function showError(msg) {
+    errorBox.textContent = msg;
+    errorBox.hidden = false;
+    status.textContent = "";
+  }
+  function renderSources(meta) {
+    var chunks = (meta && meta.groundingChunks) || [];
+    var seen = {};
+    var items = "";
+    chunks.forEach(function (c) {
+      var web = c && c.web;
+      if (web && web.uri && !seen[web.uri]) {
+        seen[web.uri] = true;
+        items += '<li><a href="' + escapeHtml(web.uri) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(web.title || web.uri) + "</a></li>";
+      }
+    });
+    if (items) {
+      sourcesBox.innerHTML = "<h3>Sources found during research</h3><ul>" + items + "</ul>";
+      sourcesBox.hidden = false;
+    } else {
+      sourcesBox.hidden = true;
+      sourcesBox.innerHTML = "";
+    }
+  }
+
+  btn.addEventListener("click", function () {
+    var key = keyInput.value.trim();
+    var topic = topicInput.value.trim();
+    errorBox.hidden = true;
+    if (!key) { showError("Paste a Google AI API key first. The key stays in this tab and is sent only to generativelanguage.googleapis.com."); keyInput.focus(); return; }
+    if (!topic) { showError("Enter a research topic first."); topicInput.focus(); return; }
+    try { sessionStorage.setItem(KEY_NAME, key); } catch (e) {}
+
+    var prompt = "You are a deep-research assistant working inside a practical guide to making a physical product.\n\n" +
+      "=== THE GUIDE (full text) ===\n" + GUIDE_CONTEXT + "\n=== END OF GUIDE ===\n\n" +
+      "Research topic: " + topic + "\n\n" +
+      "Use web search to research the topic thoroughly and write a sourced brief. Structure the brief exactly like this:\n" +
+      "## Bottom line\nA short, direct answer in two or three sentences.\n" +
+      "## What the guide says\nOnly what the guide text above says about this topic. If the guide does not cover it, say so plainly.\n" +
+      "## What the research found\nThe fresh facts, with numbers, dates, and named sources where possible. Cite sources inline as [Source name](URL) whenever a claim rests on one.\n" +
+      "## Next steps\nA short numbered list of concrete actions the reader can take.\n" +
+      "Keep guide guidance and researched facts clearly separate. Never present a researched fact as guide guidance, or guide guidance as a current fact.";
+
+    btn.disabled = true;
+    status.textContent = "Researching… this can take a minute. The agent is reading the guide and searching the web.";
+    answerBox.hidden = true;
+    sourcesBox.hidden = true;
+
+    fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-goog-api-key": key },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        tools: [{ google_search: {} }]
+      })
+    }).then(function (res) {
+      return res.text().then(function (bodyText) {
+        var data = null;
+        try { data = JSON.parse(bodyText); } catch (e) {}
+        if (!res.ok) {
+          var msg = (data && data.error && data.error.message) || ("Request failed with status " + res.status + ".");
+          if (res.status === 400 || res.status === 403) msg += " Check that the key is correct and has access to the Gemini API.";
+          throw new Error(msg);
+        }
+        return data;
+      });
+    }).then(function (data) {
+      var candidate = data && data.candidates && data.candidates[0];
+      var parts = (candidate && candidate.content && candidate.content.parts) || [];
+      var text = parts.map(function (p) { return p.text || ""; }).join("\n").trim();
+      if (!text) throw new Error("The model returned an empty answer. Try a more specific topic.");
+      answerBox.innerHTML = markdownLite(text);
+      answerBox.hidden = false;
+      renderSources(candidate.groundingMetadata);
+      status.textContent = "Brief ready.";
+    }).catch(function (err) {
+      showError("The research request could not be completed. " + (err && err.message ? err.message : "Network error — check the connection and try again."));
+    }).finally(function () {
+      btn.disabled = false;
+    });
+  });
+})();
+</script>
+</body>
+</html>
